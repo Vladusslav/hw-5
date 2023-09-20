@@ -5,6 +5,7 @@
     --c-background: #4D5AE5;
     --c-primary-tr: #434455;
     --c-background-light: #F4F4FD;
+    --c-background-modal: #FCFCFC;
 }
 
 
@@ -561,4 +562,95 @@ button{
     fill: var(--c-background-light);
 }
 
+.footer-social-media{
+    margin-right: 80px;
+}
+
+.footer-subscribe {
+    padding-left: 80px;
+}
+
+.footer-paragraf {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--c-primary-light);
+}
+
+.footer-form {
+    gap: 24px;
+    display: flex;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--c-primary-light);
+}
+
+.placeholder {
+    fill: var(--c-primary-light)
+}
+
+.footer-button {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--c-primary-light);
+    cursor: pointer;
+    background-color: var(--c-background);
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-svg {
+    margin-left: 16px;
+}
+
+
+
+
+/*Modal*/
+.backdrop {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(46, 47, 66, 0.4);
+}
+
+.is-hidden {
+    display: none;
+}
+
+.modal {
+    position: relative;
+    width: 408px;
+    background-color: var(--c-background-modal);
+    border-radius: 4px;
+    padding: 24px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
 
