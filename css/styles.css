@@ -70,8 +70,8 @@ button{
 .header{
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 1px 6px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .current {
@@ -632,10 +632,15 @@ button{
     align-items: center;
     justify-content: center;
     background-color: rgba(46, 47, 66, 0.4);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal {
@@ -644,11 +649,21 @@ button{
     background-color: var(--c-background-modal);
     border-radius: 4px;
     padding: 24px;
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop .is-hidden .modal{
+    transform: scale(0);
 }
 
 .modal-close {
     position: absolute;
     top: 24px;
     right: 24px;
+}
+
+textarea{
+    resize: none;
 }
 
