@@ -597,7 +597,7 @@ button{
 }
 
 .placeholder {
-    fill: var(--c-primary-light)
+    fill: var(--c-primary-light);
 }
 
 .footer-button {
@@ -637,6 +637,17 @@ button{
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-title{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--c-primary);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -646,6 +657,7 @@ button{
 .modal {
     position: relative;
     width: 408px;
+    min-height: 584px;
     background-color: var(--c-background-modal);
     border-radius: 4px;
     padding: 24px;
@@ -661,6 +673,73 @@ button{
     position: absolute;
     top: 24px;
     right: 24px;
+}
+
+.modal-field{
+    margin-bottom: 8px;
+}
+
+.modal-label{
+    display: block;
+    font-family: Roboto;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.modal-input{
+    width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);;
+    border-radius: 4px;
+    background-color: var(--c-primary-light);
+    padding: 8px 44px;
+    transition: border-color 250ms;
+}
+
+.modal-input:focus{
+    outline: none;
+    border-color: var(--c-background);
+}
+
+.modal-input:focus + .modal-input-icon{
+    fill: var(--c-background);
+}
+
+.modal-comment{
+    margin-bottom: 16px;
+}
+
+.modal-textarea{
+    min-height: 120px;
+    width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: var(--c-primary-light);
+    padding: 8px 16px;
+    transition: border-color 250ms;
+}
+
+.modal-textarea:focus{
+    outline: none;
+    border-color: var(--c-background);
+}
+
+.modal-input-wrap{
+    position: relative;
+}
+
+.modal-input-icon{
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    transition: fill 250ms;
+}
+
+.modal-button{
+    display: block;
+    margin: 0 auto;
 }
 
 textarea{
