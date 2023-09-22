@@ -637,6 +637,12 @@ button{
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-button-close{
+    position: absolute;
+    top: 24px;
+    right: 24px;;
+}
+
 .modal-title{
     font-family: Roboto;
     font-size: 16px;
@@ -669,10 +675,36 @@ button{
     transform: scale(0);
 }
 
-.modal-close {
+.modal-button-close {
     position: absolute;
     top: 24px;
     right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(231, 233, 252, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button-close:hover,
+.modal-button-close:focus{
+    background-color: var(--c-brand);
+    border: none;
+}
+
+.modal-close{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button-close:hover,
+.modal-button-close:focus{
+    fill: var(--c-primary-light);
 }
 
 .modal-field{
@@ -706,10 +738,6 @@ button{
     fill: var(--c-background);
 }
 
-.modal-comment{
-    margin-bottom: 16px;
-}
-
 .modal-textarea{
     min-height: 120px;
     width: 100%;
@@ -718,6 +746,9 @@ button{
     background-color: var(--c-primary-light);
     padding: 8px 16px;
     transition: border-color 250ms;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
 .modal-textarea:focus{
@@ -735,6 +766,59 @@ button{
     transform: translateY(-50%);
     position: absolute;
     transition: fill 250ms;
+}
+
+.modal-comment{
+    margin-bottom: 16px;
+}
+
+.modal-checkbox{
+    margin-bottom: 24px;
+}
+
+.modal-checkbox-check{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 8px;
+}
+
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-check{
+    background-color: var(--c-brand);
+    border: none;
+}
+
+.modal-checkbox-icon {
+    opacity: 0;
+}
+
+.modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon{
+    opacity: 1;
+}
+
+.modal-checkbox-input:checked+.modal-checkbox-check{
+    border-color: var(--c-brand);
+    background-color: var(--c-brand);
+}
+
+.modal-checkbox-label{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: rgba(142, 143, 153, 1);
+}
+
+.checkbox-privacy{
+    text-decoration: underline;
+    color: var(--c-background);
 }
 
 .modal-button{
