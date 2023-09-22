@@ -821,9 +821,10 @@ button{
     opacity: 1;
 }
 
-.modal-checkbox-input:checked+.modal-checkbox-check{
-    border-color: var(--c-brand);
+.modal-checkbox-input:checked + .modal-checkbox-check{
+    border: none;
     background-color: var(--c-brand);
+    fill: #F4F4FD;
 }
 
 .modal-checkbox-label{
