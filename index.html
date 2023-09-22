@@ -404,20 +404,21 @@
     </footer>
 
     <!--Modal-->
-    <div class="backdrop "is-hidden>
+    <div class="backdrop"is-hidden><!--is-hidden-->
         <div class="modal">
             <button class="modal-button-close" type="button">
                 <svg class="modal-close" width="8" height="8">
                     <use href="./images/modal.svg#icon-closed"></use>
                 </svg>
             </button>
-            <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+            <!--<h2 class="modal-title">Leave your contacts and we will call you back</h2>-->
+            <p class="modal-paragraf"></p>
             <form name="contact-form">
 
                 <div class="modal-field">
                     <label class="modal-label" for="user-name">Name</label>
                     <div class="modal-input-wrap">
-                        <input class="modal-input" id="user-name" type="text" name="urse-name">
+                        <input class="modal-input" id="user-name" type="text" name="user-name">
                         <svg class="modal-input-icon" width="18" height="24">
                             <use href="./images/modal.svg#icon-Frame-1"></use>
                         </svg>
@@ -450,13 +451,14 @@
                 </div>
 
                 <div class="modal-checkbox">
-                <input class="modal-checkbox-input visually-hidden" id="privacy-policy" type="checkbox" name="privacy-policy">
+                <input class="modal-checkbox-input visually-hidden" id="user-privacy" type="checkbox" name="user-privacy" value="true">
+                <label class="modal-checkbox-label" for="privacy-policy">I accept the terms and conditions of the <a class="checkbox-privacy" href="#">Privacy Policy</a></label>
                 <span class="modal-checkbox-check">
                     <svg class="modal-checkbox-icon" width="10" height="8">
                         <use href="./images/modal.svg#icon-Vector"></use>
                     </svg>
                 </span>
-                <label class="modal-checkbox-label" for="privacy-policy">I accept the terms and conditions of the <a class="checkbox-privacy" href="#">Privacy Policy</a></label>
+                <!--label-->
                 </div>
 
                 <button class="modal-button hero-button" type="submit">Send</button>
