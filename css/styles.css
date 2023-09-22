@@ -808,23 +808,15 @@ button{
     margin-right: 8px;
 }
 
-.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-check{
-    background-color: var(--c-brand);
-    border: none;
-}
-
 .modal-checkbox-icon {
     opacity: 0;
 }
 
-.modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon{
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-check{
     opacity: 1;
-}
-
-.modal-checkbox-input:checked + .modal-checkbox-check{
-    border: none;
     background-color: var(--c-brand);
-    fill: #F4F4FD;
+    border: none;
+    fill: var(--c-background-light)
 }
 
 .modal-checkbox-label{
