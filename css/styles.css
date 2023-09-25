@@ -808,15 +808,12 @@ button{
     margin-right: 8px;
 }
 
-.modal-checkbox-icon {
-    opacity: 0;
-}
-
-.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-check{
+.modal-checkbox-input:checked + .modal-checkbox-label > .modal-checkbox-check{
     opacity: 1;
     background-color: var(--c-brand);
-    border: none;
-    fill: var(--c-background-light)
+    border: none; 
+    fill: var(--c-background-light);
+    border-color: var(--c-brand);
 }
 
 .modal-checkbox-label{
