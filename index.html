@@ -405,7 +405,7 @@
     </footer>
 
     <!--Modal-->
-    <div class="backdrop"><!--is-hidden-->
+    <div class="backdrop is-hidden"><!--is-hidden-->
         <div class="modal">
             <button class="modal-button-close" type="button">
                 <svg class="modal-close" width="8" height="8">
@@ -466,6 +466,74 @@
 
                 <button class="modal-button hero-button" type="submit">Send</button>
             </form>
+        </div>
+    </div>
+
+    <!-- Mobile menu-->
+    <div class="mobile-menu-conteiner" id="open-menu">
+        <button class="modal-button" type="button" id="close-menu">
+            <svg class="modal-close-icon" width="8" height="8">
+                <use href="./images/modal.svg#icon-closed"></use>
+            </svg>
+        </button>
+
+        <div class="mobile-menu-top">
+            <nav class="mobile-nav">
+                <ul class="mobile-menu">
+                    <li>
+                        <a class="mobile-nav-item active" href="./index.html">Studio</a>
+                    </li>
+                    <li>
+                        <a class="mobile-nav-item" href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="mobile-nav-item" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="mobile-menu-bottom">
+            <address class="contact-mobile">
+                <ul class="mobile-contact-list">
+                    <li>
+                        <a class="mobile-contact-item active" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li>
+                        <a class="mobile-contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+            <ul class="footer-link">
+                <li class="footer-list">
+                    <a href="#" class="footer-social-link">
+                        <svg class="icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" class="footer-social-link">
+                        <svg class="icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" class="footer-social-link">
+                        <svg class="icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" class="footer-social-link">
+                        <svg class="icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
