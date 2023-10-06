@@ -59,9 +59,6 @@ button{
 }
 
 .container{
-    /* width: 1158px; */
-    width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -129,7 +126,7 @@ button{
 }
 
 .logo-accent{
-   color: var(--c-brand);
+   color: var(--c-primary);
 }
 
 .nav-link{
