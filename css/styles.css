@@ -208,7 +208,7 @@ button{
 
 .hero-section{
     background-color: var(--c-primary);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office/people-office-desc@2x.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -484,6 +484,7 @@ button{
 .footer-section{
     background-color: var(--c-primary);
     padding: 100px 0 100px
+
 }
 
 .footer-container-all{
@@ -516,6 +517,7 @@ button{
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+    margin-bottom: 72px;
 }
 
 .footer-container{

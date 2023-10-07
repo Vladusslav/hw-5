@@ -12,7 +12,7 @@
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)),
-            url(../images/hero/people-office.jpg);
+            url(../images/people-office/people-office-mob@2x.jpg);
     }
 }
 
@@ -33,7 +33,7 @@
         padding-bottom: 112px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)),
-            url(../images/hero/people-office.jpg);
+            url(../images/people-office/people-office-tabl.jpg);
     }
 }
 
@@ -41,7 +41,7 @@
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)),
-            url(../images/hero/people-office.jpg);
+            url(../images/people-office/people-office-tabl@2x.jpg);
     }
 }
 
@@ -52,7 +52,7 @@
         padding-bottom: 188px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)),
-            url(../images/hero/people-office.jpg);
+            url(../images/people-office/people-office-desc.jpg);
     }
 }
 
@@ -60,7 +60,7 @@
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)),
-            url(../images/hero/people-office.jpg);
+            url(../images/people-office/people-office-desc@2x.jpg);
     }
 }
 
@@ -214,8 +214,6 @@
     }
 
     .footer-container-all {
-        padding-left: 108px;
-        padding-right: 108px;
         gap: 72px 24px;
         flex-direction: row;
     }
@@ -238,11 +236,13 @@
 
     .footer-form {
         display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: end;
     }
 
     .footer-input {
         width: 264px;
-        margin-right: 24px;
         margin-bottom: 0;
     }
 
