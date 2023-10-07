@@ -55,7 +55,7 @@ button{
 }
 
 .section{
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .container{
@@ -215,7 +215,7 @@ button{
     background-position: center;
     margin: 0 auto;
     text-align: center;
-    padding: 188px 0;
+    padding: 72px 0;
 }
 
 .hero-title{
@@ -236,7 +236,7 @@ button{
 .advantage-icon{
     width: 264px;
     height: 112px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
@@ -264,31 +264,32 @@ button{
 }
 
 .advantage-section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .advantage-list{
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-direction: column;
 }
 
 .advantage-title{
     color: var(--c-primary);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .advantage-text{
     color: var(--c-primary-tr);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
 }
 
 .advantage-iteam{
@@ -298,9 +299,10 @@ button{
 /* Our Team section */
 .team-list{
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
     flex-wrap: wrap;
-    border-radius: 0px 0px 4px 4px;
+    align-items: center;
 }
 
 .our-team-item{
@@ -407,9 +409,9 @@ button{
     row-gap: 48px;
 }
 
-.our-portfolio-li{
+/* .our-portfolio-li{
     width: calc((100% - 48px) / 3);
-}
+} */
 
 .portfoli-section{
     background-color: var(--c-primary-light);
@@ -486,7 +488,9 @@ button{
 
 .footer-container-all{
     display: flex;
-    align-items: baseline
+    align-items: baseline;
+    gap: 72px;
+    flex-direction: column;
 }
 
 .footer-logo {
@@ -584,6 +588,7 @@ button{
 .footer-form {
     gap: 24px;
     display: flex;
+    flex-direction: column;
 }
 
 .footer-input {
