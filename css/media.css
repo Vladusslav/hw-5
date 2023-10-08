@@ -337,6 +337,15 @@
     }
 
     /* Footer */
+    .footer-section .container{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0 15px;
+        align-items: baseline;
+        margin: 0 auto;
+        width: 1440px;
+
+    }
 
     .footer-container {
         margin-right: 120px;
