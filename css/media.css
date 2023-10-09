@@ -214,8 +214,8 @@
     }
 
     .footer-container-all {
-        gap: 72px 24px;
         flex-direction: row;
+        gap: 72px 24px;
     }
 
     .footer-wrapper{
